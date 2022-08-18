@@ -19,7 +19,7 @@ Variables
   --clr-primary-4: hsl(184, 77%, 34%);
   /* primary/main color */
   --clr-primary-5: hsl(185, 62%, 45%);
-  /* --clr-primary-5: red; */
+  --clr-primary-5: red;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -458,7 +458,8 @@ Featured Tours
 }
 .tour-img{
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .tour-date{
   position: absolute;
@@ -557,6 +558,18 @@ Contact
   text-transform: capitalize;
   border: transparent;
 }
+.form-control::-webkit-input-placeholder{
+  color: inherit;
+}
+.form-control::-moz-placeholder{
+  color: inherit;
+}
+.form-control:-ms-input-placeholder{
+  color: inherit;
+}
+.form-control::-ms-input-placeholder{
+  color: inherit;
+}
 .form-control::placeholder{
   color: inherit;
 }
@@ -607,7 +620,8 @@ Gallery
 }
 .gallery-img{
   height: 17rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: var(--transition);
 }
 .gallery-img-container:hover .gallery-img{
