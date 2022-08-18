@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $visitor_email = $_POST['email'];
 
 
@@ -26,4 +26,4 @@ header("Location: index.html");
 
 
 
-?>
+?> -->
